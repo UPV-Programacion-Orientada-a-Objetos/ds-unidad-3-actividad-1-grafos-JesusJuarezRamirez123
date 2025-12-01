@@ -13,7 +13,42 @@ Por lo tanto se necesita desarrollar un sistema híbrido llamado **NeuroNet**. E
 
 El sistema debe cargar un dataset masivo (Benchmark del proyecto SNAP de Stanford), almacenarlo eficientemente utilizando estructuras comprimidas (CSR - Compressed Sparse Row) hechas a mano, y permitir al usuario realizar análisis de centralidad y simulaciones de recorrido desde una interfaz visual.
 
+
+## Instalación y Ejecución
+
+### Prerrequisitos
+*   Python 3.8 o superior
+*   Compilador de C++ (g++ o MSVC)
+
+### Pasos
+
+1.  **Crear un entorno virtual (Opcional pero recomendado):**
+    ```bash
+    python -m venv venv
+    # Windows
+    venv\Scripts\activate
+    # Linux/Mac
+    source venv/bin/activate
+    ```
+
+2.  **Instalar dependencias:**
+    ```bash
+    pip install cython networkx matplotlib pyvis
+    ```
+
+3.  **Compilar la extensión de C++:**
+    Es necesario compilar el código C++ y generar el módulo de Cython antes de ejecutar la aplicación.
+    ```bash
+    python setup.py build_ext --inplace
+    ```
+
+4.  **Ejecutar la aplicación:**
+    ```bash
+    python app.py
+    ```
+
 -----
+
 
 ## Temas Relacionados y Necesarios
 

@@ -1,0 +1,13 @@
+venv/
+build/
+lib/
+__pycache__/
+*.pyd
+*.so
+*.dll
+neuronet.cpp
+graph_viz.html
+.vscode/
+.idea/
+*.egg-info/
+dist/
